@@ -2252,107 +2252,6 @@ padding: 70px 10px 50px 350px;
 ------- Media Queries for Split Layout Ends ---------
 ---------------------------------------------------*/
 
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #555;
-}
-
-
-/* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-}
-
-nav.fill ul li a {
-  transition: all 2s;
-}
-
-nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-
-@media only screen and (min-width: 767px) {
-	.pricing .price-tag h2 {
-		text-align: center;
-	}
-	.table-left .pricing-details span, .table-right .pricing-details span {
-		text-align: center;
-	}
-}
-
-@media only screen and (min-width: 320px) {
-	.pricing .price-tag h2 {
-		text-align: center;
-	}
-	.table-left .pricing-details span, .table-right .pricing-details span {
-		text-align: center;
-	}
-}
-
-.logo-main{
-	margin-top: -25px;
-}
-
-@media only screen and (min-width: 767px) {
-	.logo-main{
-		margin-top: -5px;
-}
-
-@media only screen and (min-width: 767px) {
-	.pricing-section .table-left, .pricing-section .table-right{
-
-	}
-}
-
-@media only screen and (min-width: 760px){
-	.about-programm{
-		width: auto;
-	}
-}
-
-@media only screen and (max-width: 1112px) {
-	.about-programm{
-		width: 1024px;
-		max-width: 100%;
-	}
-}
-
 .modal {
   position: absolute;
   visibility: hidden;
@@ -2456,4 +2355,106 @@ background-clip: padding-box;
 border: 1px solid #ced4da;
 border-radius: .25rem;
 
+}
+
+
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 767px) {
+	.pricing .price-tag h2 {
+		text-align: center;
+	}
+	.table-left .pricing-details span, .table-right .pricing-details span {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	.pricing .price-tag h2 {
+		text-align: center;
+	}
+	.table-left .pricing-details span, .table-right .pricing-details span {
+		text-align: center;
+	}
+}
+
+.logo-main{
+	margin-top: -25px;
+}
+
+@media only screen and (min-width: 767px) {
+	.logo-main{
+		margin-top: -5px;
+}
+
+@media only screen and (min-width: 767px) {
+	.pricing-section .table-left, .pricing-section .table-right{
+
+	}
+}
+
+@media only screen and (min-width: 760px){
+	.about-programm{
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 1112px) {
+	.about-programm{
+		width: 1024px;
+		max-width: 100%;
+	}
 }
